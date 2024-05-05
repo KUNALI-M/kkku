@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet"href="form.css">
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text"id="name"name="name"required>
+        </div>
+        <br>
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date" id="date"name="date"required>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio"id="male" name="gender"value="male">
+            <label for="male">male</label>
+            <input type="radio"id="female"name="gender"value="female">
+            <label for="female">female</label>
+        </div>
+        <div>
+            <label for="Address">ADDRESS</label>
+            <textarea id="Address"name="Address"rows="4"cols="50"></textarea>
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email"id="email"name="email"value="email">
+        </div>
+        <div>
+            <label for="no">NO</label>
+            <input type="number" id="no"name="no" value="no">
+        </div>
+        <div>
+            <label for="dept">Dept</label>
+            <select id="dept"name="dept" value="dept">
+                <option value="AI">Ai</option>
+                <option value="ML">ML</option>
+                <option value="DL">Di</option>
+                <option value="NLP">NiP</option>
+            </select>
+        </div>
+        <div>
+            <label for="dis">Disability</label>
+            <input type="checkbox"id="full"name="dis"value="full">
+            <label for="dis">full</label>
+            <input type="checkbox"id="partial"name="dis"value="partial">
+            <label for="dis">partial</label>
+        </div>
+        <div>
+            <label for="marksheet">Marksheet</label>
+            <input type="file"id="marksheet"name="marksheet">
+        </div>
+        <div>
+            <label for="img">image</label>
+            <input type="file"id="img"name="img"accept="image/*">
+         
+        </div>
+        <div>
+            <input type="submit"value="submit">
+            <input type="reset"value="reset">
+        </div>
+        </form>
+        <script src="form.js"></script>
+    
+</body>
+</html>
